@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="GDriveBackupTestApp"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:text="Selected Account: " />
+
+        <TextView
+            android:id="@+id/selectedAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="8dp"
+            android:text="None" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Hello World! Choose an account to start." />
+
+    <Button
+        android:id="@+id/buttonChooseAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="chooseAccount"
+        android:text="Choose Account" />
+
+    <Button
+        android:id="@+id/buttonAuthorize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="authorizeAccess"
+        android:text="Authorize Google Drive access" />
+
+    <Button
+        android:id="@+id/buttonSaveFileToDrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveFileToDrive"
+        android:text="Save file to Drive" />
+
+    <Button
+        android:id="@+id/buttonListAppData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listAppData"
+        android:text="List App Data Files" />
+
+    <Button
+        android:id="@+id/buttonReadAppDataFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="readAppDataFile"
+        android:text="Read App Data File" />
+
+</LinearLayout>
